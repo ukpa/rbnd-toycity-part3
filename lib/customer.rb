@@ -26,7 +26,7 @@ class Customer
         return customer
       end
     end
-    puts "#{customer.name} is not on the list."
+    puts "#{name} is not on the list."
   end
 
   private

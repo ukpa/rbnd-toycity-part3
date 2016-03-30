@@ -27,7 +27,7 @@ class Product
         return product
       end
     end
-    puts "#{product.title} is currently not available in the inventory."
+    puts "#{name} is currently not available in the inventory."
   end
 
   def in_stock?
@@ -35,13 +35,7 @@ class Product
   end
 
   def self.in_stock
-    in_stock_products = []
-    @@products.each do |product|
-      if product.stock>0
-        in_stock_products << product
-      end
-    end
-    return in_stock_products
+    @@products.each {|product| product.in_stock?}
   end
   private
 
