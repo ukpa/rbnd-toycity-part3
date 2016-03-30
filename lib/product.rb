@@ -15,13 +15,19 @@ class Product
     @@products
   end
 
+  def self.product_list
+    @@products.each do |product|
+      puts "Name: #{product.title} | Price per piece: #{product.price} | In Stock: #{product.stock}"
+    end
+  end
+
   def self.find_by_title(name)
     @@products.each do |product|
       if product.title == name
         return product
       end
     end
-    raise ItemNotFoundError, "#{product.title} is currently not available in the inventory."
+    puts "#{product.title} is currently not available in the inventory."
   end
 
   def in_stock?

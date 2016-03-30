@@ -26,7 +26,7 @@ class Customer
         return customer
       end
     end
-    raise CustomerNotFoundError, "#{customer.name} is not on the list."
+    puts "#{customer.name} is not on the list."
   end
 
   private

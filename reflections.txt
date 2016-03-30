@@ -6,9 +6,12 @@ Project was pretty simple and straight forward, but helped me
 sharpen my OOP concepts
 
 What two additional features did you build? Why?
-Because of thesis and studies, haven't added any new features but i'll
-add one later for purchasing multiple items in a single transaction and
-generating a bill in the end. But i did completed all that was required.
+You can view the inventory by calling "Product.product_list".
+You can also look at the previous transactions with every details and total
+revenue of the store by calling "Transaction.in_detail".
+I added these features, so that user can view whats there in the inventory
+rather then guessing all the time and also the sellers can easily go
+through their sales and the revenue.
 
 Where do you still have room to grow?
 Ruby api is huge and i want to go through it as much as i can,
