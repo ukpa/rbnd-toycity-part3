@@ -11,6 +11,15 @@ class Customer
     @@customers
   end
 
+  def purchase(product)
+    if product.in_stock?
+      Transaction.new(self,product)
+    else
+      raise OutOfStockError, "#{product.title} is out of stock."
+    end
+  end
+
+
   def self.find_by_name(name)
     @@customers.each do |customer|
       if customer.name == name

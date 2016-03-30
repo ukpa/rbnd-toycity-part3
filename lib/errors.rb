@@ -9,3 +9,6 @@ end
 
 class CustomerNotFoundError < StandardError
 end
+
+class OutOfStockError < StandardError
+end

@@ -1,0 +1,21 @@
+3
+Nano Block Empire State Building
+49.99
+12
+true
+false
+true
+false
+2
+Walter Latimer
+1
+true
+false
+true
+11
+#<Transaction:0x007fc6908111c8>
+2
+true
+/Users/unnikrishnanpatel/Desktop/Udacity/rbnd-toycity-part3/lib/customer.rb:18:in `purchase': LEGO Firehouse Headquarter is out of stock. (OutOfS
+tockError)
+        from app.rb:65:in `<main>'
