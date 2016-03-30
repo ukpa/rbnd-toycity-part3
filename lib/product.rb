@@ -1,10 +1,12 @@
 class Product
-  attr_reader :title
+  attr_reader :title, :price, :stock
 
   @@products = []
 
   def initialize(options={})
     @title = options[:title]
+    @price = options[:price]
+    @stock = options[:stock]
     add_to_products
   end
 
@@ -12,10 +14,22 @@ class Product
     @@products
   end
 
+  def self.find_by_title(name)
+    @@products.each do |product|
+      if product.title == name
+        return product
+      end
+    end
+    raise ItemNotFoundError, "#{product.title} is currently not available in the inventory."
+  end
+
+  def in_stock?
+    return @stock>0
+  end
+
   private
 
   def add_to_products
-    # hmm...
     @@products.each do |product|
       if product.title == @title
         raise DuplicateProductError, "#{product.title} already exists. (DuplicateProductError)."
@@ -23,4 +37,7 @@ class Product
     end
     @@products << self
   end
+
+
+
 end
