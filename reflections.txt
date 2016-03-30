@@ -1,0 +1,16 @@
+How long did you spend working on this project?
+1.5 hours
+
+What was the most rewarding challenge you conquered?
+Project was pretty simple and straight forward, but helped me
+sharpen my OOP concepts
+
+What two additional features did you build? Why?
+Because of thesis and studies, haven't added any new features but i'll
+add one later for purchasing multiple items in a single transaction and
+generating a bill in the end. But i did completed all that was required.
+
+Where do you still have room to grow?
+Ruby api is huge and i want to go through it as much as i can,
+so while programming it comes in handy to use the predefined methods rather
+then wasting time creating my own.
