@@ -27,6 +27,15 @@ class Product
     return @stock>0
   end
 
+  def self.in_stock
+    in_stock_products = []
+    @@products.each do |product|
+      if product.stock>0
+        in_stock_products << product
+      end
+    end
+    return in_stock_products
+  end
   private
 
   def add_to_products
